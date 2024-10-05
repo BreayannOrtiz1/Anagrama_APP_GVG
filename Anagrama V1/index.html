@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anagram Game</title>
     <link rel="stylesheet" href="styles.css">
     <!-- <style>
@@ -13,7 +14,7 @@
 <body>
 
      <!-- Página de Inicio -->
-     <div id="start-screen" class="visible">
+     <div id="start-screen" class="visible" class="container">
         <h1>Bienvenido al Juego de Anagramas</h1>
         <label for="username">Ingresa tu nombre:</label>
         <input type="text" id="username" autofocus/>
@@ -21,7 +22,7 @@
     </div>
 
     <!-- Página de Juego (Anagrama) -->
-    <div id="game-screen" class="hidden">
+    <div id="game-screen" class="hidden" class="container">
         <h2 id="greeting"></h2>
         <div id="timer">50</div>
         <div id="anagram-container"></div>
@@ -33,7 +34,7 @@
     </div>
 
     <!-- Página de Resultado Final -->
-    <div id="end-screen" class="hidden">
+    <div id="end-screen" class="hidden" class="container">
         <h1>¡Tiempo agotado!</h1>
         <p id="final-message"></p>
         <p id="final-score"></p>
