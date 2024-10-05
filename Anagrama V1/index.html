@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <style>
+        .hidden { display: none; }
+        .visible { display: block; }
+    </style> -->
+</head>
+<body>
+
+     <!-- Página de Inicio -->
+     <div id="start-screen" class="visible">
+        <h1>Bienvenido al Juego de Anagramas</h1>
+        <label for="username">Ingresa tu nombre:</label>
+        <input type="text" id="username" autofocus/>
+        <button id="start-game-btn">Iniciar Juego</button>
+    </div>
+
+    <!-- Página de Juego (Anagrama) -->
+    <div id="game-screen" class="hidden">
+        <h2 id="greeting"></h2>
+        <div id="timer">50</div>
+        <div id="anagram-container"></div>
+        <input type="text" id="guess-input" />
+        <button id="submit-btn">Enviar</button>
+        <div id="score"></div>
+        <button id="change-word">Change Word</button>
+        <button id="new-game">Nuevo Juego</button>
+    </div>
+
+    <!-- Página de Resultado Final -->
+    <div id="end-screen" class="hidden">
+        <h1>¡Tiempo agotado!</h1>
+        <p id="final-message"></p>
+        <p id="final-score"></p>
+        <button id="restart-btn">Nuevo Juego</button>
+    </div>
+
+<!--     
+    <div class="game-container">
+        <h1>Anagram Game</h1>
+        <div id="timer">50</div>
+        <div id="anagram-container"></div>
+        <input type="text" id="guess-input" placeholder="Guess the word" autofocus>
+        <button id="submit-btn">Submit</button>
+        <button id="change-word">Change Word</button>
+        <button id="new-game">New Game</button>
+        <div id="score">Score: 0</div>
+    </div> -->
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
